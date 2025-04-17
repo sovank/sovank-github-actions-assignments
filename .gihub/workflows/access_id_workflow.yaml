@@ -6,4 +6,9 @@ on:
 jobs:
   print-access-id:
     runs-on: ubuntu-latest
-  
+    env:
+      ACCESS_ID: ${{ vars.ACCESS_ID}}
+      
+    steps:
+      - name: Print Access ID
+        run: echo "The ACCESS_ID is $ACCESS_ID"
