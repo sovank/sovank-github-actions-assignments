@@ -7,7 +7,7 @@ jobs:
   print-access-id:
     runs-on: ubuntu-latest
     env:
-      ACCESS_ID: ${{ vars.ACCESS_ID}}
+      ACCESS_ID: ${{ vars.ACCESS_ID }}
       
     steps:
       - name: Print Access ID
