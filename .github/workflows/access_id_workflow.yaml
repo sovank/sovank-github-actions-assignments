@@ -1,6 +1,6 @@
 name: Access ID Workflow
 on:
-  push:
+  pull_request:
     branches:
       - main
 jobs:
