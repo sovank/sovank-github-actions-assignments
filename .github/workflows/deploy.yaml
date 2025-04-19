@@ -6,6 +6,15 @@ on:
         description: "Version to deploy"
         type: string
         required: true
+      environment:
+        required: true
+        default: "staging"
+        type: choice
+        options:
+          - development
+          - staging
+          - production
+        
 jobs:
   deploy:
     runs-on: ubuntu-latest
